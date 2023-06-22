@@ -1,7 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
-import { GradientBackgroundCon } from '@/components/QuoteGenerator/QuoteGeneratorElements'
+
+// Components
+import { BackgroundImageBottomRight, BackgroundImageTopLeft, GradientBackgroundCon } from '@/components/QuoteGenerator/QuoteGeneratorElements'
+
+// Assets
+import Cloud_Thunder from '@/assets/cloud_thunder.png';
+import Cloudy_Weather from '@/assets/cloudy_weather.png';
 
 export default function Home() {
   return (
@@ -13,7 +19,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <GradientBackgroundCon>
-
+        <BackgroundImageTopLeft 
+         src = {Cloud_Thunder}
+         height = "200"
+         alt=""/>
+        <BackgroundImageBottomRight 
+         src = {Cloudy_Weather}
+         height = "200"
+         alt=""/>
       </GradientBackgroundCon>
     </>
   )
